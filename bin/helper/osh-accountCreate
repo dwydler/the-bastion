@@ -414,7 +414,7 @@ if ($type eq 'realm') {
     osh_info "Realm has been created.";
 }
 else {
-    osh_info "==> alias $bastionName='$bastionCommand'";
+    osh_info "==> echo \"alias $bastionName='$bastionCommand'\" >> ~/.bash_aliases";
     osh_info "To test his access, ask this user to set the above alias in his .bash_aliases, then run `$bastionName --osh info'";
 }
 
